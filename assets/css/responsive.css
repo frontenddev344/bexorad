@@ -127,12 +127,11 @@
       .season-grid{
         grid-template-columns:repeat(2,1fr);
     }
-    .offer-banner {
-        flex-direction: column-reverse;
-        text-align: center;
-        padding: 45px 30px;
+    .offer-banner{
+        flex-direction:column-reverse;
+        text-align:center;
+        padding:45px 30px;
     }
-}
 
     .offer-content{
         max-width:100%;
@@ -171,7 +170,7 @@
 }
 
 h1.mainhead {
-    font-size: 34px;
+    font-size: 38px;
     margin-bottom: 14px;
 }
 
@@ -331,7 +330,9 @@ h1.mainhead {
 .hero-buttons{
     flex-direction:column;
 }
-    
+      .latest-blog {
+        padding: 70px 0;
+    }
 
     .blog-grid {
         grid-template-columns: 1fr;

@@ -763,8 +763,8 @@ FEATURED COLLECTION
 
 
 .offer-content h2 {
+     color: var(--white);
     margin-bottom: 20px;
-    color: var(--light);
 }
 
 .offer-content h2 span {
