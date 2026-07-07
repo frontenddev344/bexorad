@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <!-- Google Consent Mode v2: default state (set BEFORE any tag/analytics loads) -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied',
+        'wait_for_update': 500
+      });
+      // TODO: once you have a Google Ads / GA4 Measurement ID, load gtag.js here, e.g.:
+      // <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX">
+          // and call gtag('config', 'G-XXXXXXX'); after this snippet.
+      </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <title>Shop Fan-Style Jerseys &amp; Apparel | Bexorad</title>
+    <meta name="description" content="Shop Bexorad fan-style football, basketball, baseball, and hockey jerseys plus game-day accessories. Free worldwide shipping on orders over $99.">
+    <link rel="canonical" href="https://bexorad.com/shop">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Shop Fan-Style Jerseys &amp; Apparel | Bexorad">
+    <meta property="og:description" content="Shop Bexorad fan-style football, basketball, baseball, and hockey jerseys plus game-day accessories. Free worldwide shipping on orders over $99.">
+    <meta property="og:url" content="https://bexorad.com/shop">
+    <meta property="og:image" content="https://bexorad.com/assets/images/shopbnr.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Shop Fan-Style Jerseys &amp; Apparel | Bexorad">
+    <meta name="twitter:description" content="Shop Bexorad fan-style football, basketball, baseball, and hockey jerseys plus game-day accessories. Free worldwide shipping on orders over $99.">
+    <meta name="twitter:image" content="https://bexorad.com/assets/images/shopbnr.jpg">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Bexorad",
+      "url": "https://bexorad.com/",
+      "logo": "https://bexorad.com/assets/images/favicon.png"
+    }
+    </script>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="announcement-bar">
+            <div class="container">
+                <p>
+                    FREE Worldwide Shipping On Orders Over $99
+                </p>
+            </div>
+        </div>
+
+        <div class="navbar">
+
+            <div class="container nav-wrapper">
+
+                <a href="#" class="logo">
+                    BEXORAD
+                </a>
+
+                  <nav class="nav-links">
+
+                    <a href="./">Home</a>
+
+                    <a href="shop">Shop</a>
+
+                    <a href="brands">Brand</a>
+
+                    <a href="new-arrivals">New Arrivals</a>
+
+                    <a href="blog">Blog</a>
+
+                    <a href="about-us">About Us</a>
+
+                    <a href="contact-us">Contact Us</a>
+
+                </nav>
+
+                <button class="menu-btn btnmain">
+                    Shop Now
+                </button>
+
+
+                <button class="mobile-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+ 
+
+
+    <section class="hero shopbnr " style="height: 650px; background-position: center;">
+
+        <div class="hero-overlay"></div>
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+             Premium Sports Jerseys
+
+
+                </span>
+
+                <h1 class="mainhead">
+                 Find Your Perfect Jersey
+
+                </h1>
+
+                <p class="main-desc">
+Explore our collection of premium-quality sports jerseys inspired by America's favorite leagues. From football and basketball to baseball and hockey, discover jerseys designed for passionate fans who want style, comfort, and performance on every game day.
+
+                </p>
+
+                <div class="hero-btns">
+                    <a href="#" class="btn-primary">
+                    Shop Best Sellers
+
+                    </a>
+                    <a href="#" class="main-btn">
+                      New Arrivals
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+   <section class="product-section" id="productlink">
+<div class="container">
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <h2>Filters</h2>
+
+      <input type="text" id="searchInput" placeholder="Search products...">
+
+      <div class="filter-block">
+        <h4>Category</h4>
+        <label><input type="radio" name="category" value="all" checked> All</label>
+        <label><input type="radio" name="category" value="football"> Football</label>
+        <label><input type="radio" name="category" value="basketball"> Basketball</label>
+      </div>
+
+      <div class="filter-block">
+        <h4>Style</h4>
+        <select id="teamFilter">
+          <option value="all">All Styles</option>
+          <option value="style-a">Home Style</option>
+          <option value="style-b">Away Style</option>
+          <option value="style-c">Icon Style</option>
+          <option value="style-d">Statement Style</option>
+        </select>
+      </div>
+
+      <div class="filter-block">
+        <h4>Sort Price</h4>
+        <select id="priceSort">
+          <option value="default">Default</option>
+          <option value="low">Low → High</option>
+          <option value="high">High → Low</option>
+        </select>
+      </div>
+
+    </aside>
+
+    <!-- PRODUCTS -->
+    <div class="arrival-products" id="productGrid">
+<!-- Card 1 -->
+<div class="arrival-card" data-category="football" data-team="style-a" data-price="129.99">
+    <div class="arrival-image">
+        <img src="assets/images/football-jersey.jpg" alt="Football home jersey" width="2000" height="2000">
+    </div>
+
+    <div class="arrival-content">
+        <h3>Elite Home Jersey</h3>
+        <span class="team-name">Football Collection</span>
+        <div class="arrival-rating">★★★★★</div>
+        <div class="arrival-price">$129.99</div>
+    </div>
+</div>
+
+<!-- Card 2 -->
+<div class="arrival-card" data-category="football" data-team="style-b" data-price="124.99">
+    <div class="arrival-image">
+        <img src="assets/images/football-collection.jpg" alt="Football game-day jersey" width="1500" height="1000">
+    </div>
+
+    <div class="arrival-content">
+        <h3>Power Arm Game Jersey</h3>
+        <span class="team-name">Football Collection</span>
+        <div class="arrival-rating">★★★★☆</div>
+        <div class="arrival-price">$124.99</div>
+    </div>
+</div>
+
+<!-- Card 3 -->
+<div class="arrival-card" data-category="basketball" data-team="style-c" data-price="109.99">
+    <div class="arrival-image">
+       <img src="assets/images/basketball-jersey.jpg" alt="Basketball icon jersey" width="1000" height="667">
+    </div>
+
+    <div class="arrival-content">
+        <h3>Icon Series Jersey</h3>
+        <span class="team-name">Basketball Collection</span>
+        <div class="arrival-rating">★★★★★</div>
+        <div class="arrival-price">$109.99</div>
+    </div>
+</div>
+
+<!-- Card 4 -->
+<div class="arrival-card" data-category="basketball" data-team="style-d" data-price="112.99">
+    <div class="arrival-image">
+              <img src="assets/images/basketball-collection.jpg" alt="Basketball statement jersey" width="1000" height="667">
+    </div>
+
+    <div class="arrival-content">
+        <h3>Statement Jersey</h3>
+        <span class="team-name">Basketball Collection</span>
+        <div class="arrival-rating">★★★★★</div>
+        <div class="arrival-price">$112.99</div>
+    </div>
+</div>
+
+    </div>
+</div>
+  </div>
+
+</section>
+    <section class="brandmain-sec spacingmain" >
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="hero-tag">Shop by Sport
+</span>
+             <h2 class="maintitle">Browse by Sport
+</h2>
+            <p class="main-desc">
+               Choose your favorite sport and discover fan-style jerseys built for game day.
+
+            </p>
+        </div>
+
+        <div class="brandmain-grid">
+
+            <div class="brandmain-card">
+                <div class="brandmain-icon">
+                    <img src="assets/images/football-jersey.jpg" alt="Football jersey category" width="2000" height="2000">
+                </div>
+                  <div class="brandmain-innerspace">
+                <h3>Football Jerseys
+</h3>
+                <p class="main-desc">
+                    Celebrate every touchdown with fan-style football jerseys built for comfort and game-day performance.
+                </p>
+
+                <a href="shop"><span class="read-more">
+                    Shop Football
+
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span></a>
+                </div>
+            </div>
+
+            <div class="brandmain-card">
+                <div class="brandmain-icon">
+                    <img src="assets/images/basketball-jersey.jpg" alt="Basketball jersey" width="1000" height="667">
+                </div>
+                     <div class="brandmain-innerspace">
+                <h3>Basketball Jerseys
+</h3>
+
+                <p class="main-desc">
+                    Premium basketball jerseys built for fans who live every buzzer-beater.
+
+                </p>
+ <a href="shop"><span class="read-more">
+                    Shop Basketball
+
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span></a>
+                </div>
+            </div>
+
+            <div class="brandmain-card">
+                <div class="brandmain-icon">
+                    <img src="assets/images/baseball-jersey.jpg" alt="Baseball jersey category" width="1000" height="667">
+                </div>
+                     <div class="brandmain-innerspace">
+                <h3>Baseball Jerseys
+</h3>
+
+                <p class="main-desc">
+                    Classic baseball jerseys inspired by generations of unforgettable moments.
+
+                </p>
+
+                           <a href="shop"><span class="read-more">
+                    Shop Baseball
+
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span></a>
+                </div>
+            </div>
+
+            <div class="brandmain-card">
+                <div class="brandmain-icon">
+                    <img src="assets/images/hockey-jersey.jpg" alt="Hockey jersey category" width="1000" height="667">
+                </div>
+                     <div class="brandmain-innerspace">
+                <h3>Hockey Jerseys
+</h3>
+
+                <p class="main-desc">
+                   High-quality hockey jerseys for fans who never miss the action.
+
+                </p>
+ <a href="shop"><span class="read-more">
+                    Shop Hockey
+
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span></a>
+                </div>
+            </div>
+
+            <div class="brandmain-card">
+                <div class="brandmain-icon">
+                    <img src="assets/images/college-style-jersey.jpg" alt="College-style jersey category" width="1000" height="714">
+                </div>
+       <div class="brandmain-innerspace">
+                <h3>College-Style Jerseys
+</h3>
+
+                <p class="main-desc">
+                 Show your school spirit with premium college-style apparel.
+
+                </p>
+
+                       <a href="shop"><span class="read-more">
+                    Shop College Style
+
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span></a>
+                </div>
+            </div>
+
+            <div class="brandmain-card">
+                <div class="brandmain-icon">
+                    <img src="assets/images/Accessories-img.jpg" alt="Fan accessories collection" width="894" height="859">
+                </div>
+       <div class="brandmain-innerspace">
+                <h3>Accessories Collection</h3>
+
+                <p class="main-desc">
+                    Caps, bags, and fan gear to complete your game-day look.
+                </p>
+
+                         <a href="shop"><span class="read-more">
+                    Shop Accessories
+
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="fresh-arrivals spacingmain">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="hero-tag">Best Selling Jerseys
+</span>
+            <h2 class="maintitle">Best Sellers
+</h2>
+            <p class="main-desc">
+              Our most popular jerseys chosen by sports fans across North America.
+
+            </p>
+        </div>
+
+
+        <!-- Products -->
+        <div class="arrival-products">
+
+            <!-- Football -->
+            <div class="arrival-card" data-category="football">
+                <div class="arrival-image">
+                    <img src="assets/images/football-jersey.jpg" alt="Football home jersey" width="2000" height="2000">
+                </div>
+
+                <div class="arrival-content">
+                    <h3>Elite Home Jersey</h3>
+                    <span class="team-name">Football Collection</span>
+                    <div class="arrival-rating">★★★★★</div>
+                    <div class="arrival-price">$129.99</div>
+                </div>
+            </div>
+
+            <div class="arrival-card" data-category="football">
+                <div class="arrival-image">
+                      <img src="assets/images/browse-img1.jpg" alt="Football elite jersey" width="1500" height="1000">
+                </div>
+
+                <div class="arrival-content">
+                    <h3>Away Elite Jersey</h3>
+                    <span class="team-name">Football Collection</span>
+                    <div class="arrival-rating">★★★★★</div>
+                    <div class="arrival-price">$124.99</div>
+                </div>
+            </div>
+
+            <!-- Basketball -->
+            <div class="arrival-card" data-category="basketball">
+                <div class="arrival-image">
+                                 <img src="assets/images/browse-img2.jpg" alt="Basketball icon edition jersey" width="564" height="564">
+                </div>
+
+                <div class="arrival-content">
+                    <h3>Icon Edition Jersey</h3>
+                    <span class="team-name">Basketball Collection</span>
+                    <div class="arrival-rating">★★★★★</div>
+                    <div class="arrival-price">$109.99</div>
+                </div>
+            </div>
+
+            <div class="arrival-card" data-category="basketball">
+                <div class="arrival-image">
+                            <img src="assets/images/basketball-collection.jpg" alt="Basketball statement edition jersey" width="1000" height="667">
+                </div>
+
+                <div class="arrival-content">
+                    <h3>Statement Edition Jersey</h3>
+                    <span class="team-name">Basketball Collection</span>
+                    <div class="arrival-rating">★★★★★</div>
+                    <div class="arrival-price">$112.99</div>
+                </div>
+            </div>
+
+          
+
+        </div>
+
+    </div>
+</section>
+
+<section class="brandmain-premium spacingmain">
+    <div class="container">
+  <div class="section-heading">
+
+                <span class="hero-tag"> Premium Collection
+
+</span>
+
+                <h2 class="maintitle">Premium Fan Collection
+
+</h2>
+<p class="maindesc">Discover jerseys crafted with breathable fabrics, athletic-inspired fits, and premium stitching for long-lasting comfort.
+</p>
+
+            </div>
+            <div class="brandmainflex brandsec">
+        <div class="brandmain-premium-item">
+            <div class="brandmain-premium-icon">
+                <i class="fa-regular fa-gem"></i>
+            </div>
+            <div class="brandmain-premium-content">
+                <h4>Lightweight Fabric
+
+</h4>
+                <p>Lightweight fabrics designed for comfort and durability.
+
+</p>
+            </div>
+        </div>
+
+        <div class="brandmain-premium-item">
+            <div class="brandmain-premium-icon">
+                <i class="fa-solid fa-shirt"></i>
+            </div>
+            <div class="brandmain-premium-content">
+                <h4>Moisture-Wicking Material
+
+</h4>
+                <p>Comfortable fit suitable for game day and everyday wear.
+
+</p>
+            </div>
+        </div>
+
+        <div class="brandmain-premium-item">
+            <div class="brandmain-premium-icon">
+                <i class="fa-solid fa-wind"></i>
+            </div>
+            <div class="brandmain-premium-content">
+                <h4>Comfortable Fit
+
+</h4>
+                <p>Stay cool with moisture-managing materials.
+
+</p>
+            </div>
+        </div>
+
+        <div class="brandmain-premium-item">
+            <div class="brandmain-premium-icon">
+                <i class="fa-solid fa-medal"></i>
+            </div>
+            <div class="brandmain-premium-content">
+                <h4>High-Quality Printing
+
+</h4>
+                <p>Vibrant, durable prints that stay sharp and resist fading over time.
+
+</p>
+            </div>
+        </div>
+     
+
+    </div>
+    </div>
+</section>
+
+
+<section class="trust-section spacingmain">
+        <div class="container">
+
+        <div class="section-heading">
+            <span class="hero-tag">Why Buy From Us
+
+</span>
+            <h2 class="maintitle">The Bexorad Difference
+</h2>
+        </div>
+            <div class="trust-grid">
+   <div class="trust-card">
+                    <div class="trust-icon">
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+                    <h3>Premium Quality</h3>
+                    <p>Crafted with attention to detail using durable materials.
+</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <h3>Fast Shipping
+</h3>
+                    <p>Quick processing and reliable delivery.
+</p>
+                </div>
+
+             
+
+                <div class="trust-card">
+                    <div class="trust-icon">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <h3>Secure Shopping</h3>
+                    <p>Protected checkout with trusted payment providers.
+</p>
+                </div>
+
+                <div class="trust-card">
+                    <div class="trust-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3>Customer Support</h3>
+                    <p>Dedicated support before and after your purchase.
+</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+ <section class="contact-form-sectio spacingmain" id="contact-form ">
+        <div class="container">
+                <!-- FAQ -->
+
+                <div class="faq-box">
+
+                    <span class="hero-tag">Need Help?</span>
+
+                    <h3>Frequently Asked Questions</h3>
+
+                    <div class="faq-item active">
+
+                        <button class="faq-question">
+                         Do you ship internationally?
+
+                            <span>+</span>
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                            Yes. We offer worldwide shipping with tracking available on eligible orders.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="faq-item">
+
+                        <button class="faq-question">
+                        How do I choose my size?
+
+                            <span>+</span>
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                            Please refer to our detailed Size Guide available on every product page.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="faq-item">
+
+                        <button class="faq-question">
+                       Can I return my order?
+
+                            <span>+</span>
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+Yes. Eligible products can be returned according to our Return Policy.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="faq-item">
+
+                        <button class="faq-question">
+                        How long does shipping take?
+
+                            <span>+</span>
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>Orders are typically processed within 1–2 business days, with delivery times varying by destination.
+</p>
+
+                        </div>
+
+                    </div>
+
+                        <div class="faq-item">
+
+                        <button class="faq-question">
+                       What payment methods do you accept?
+
+
+                            <span>+</span>
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>We accept major credit cards, debit cards, PayPal, Apple Pay, Google Pay, and other secure payment options where available.
+</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+    </section>
+
+    
+
+    <section class="disclaimer-section spacingmain">
+        <div class="container">
+            <div class="disclaimer-content">
+                <h3>Disclaimer</h3>
+                <p>
+                    The products, services, and information available on <a href="https://bexorad.com/">Bexorad.com</a> are provided for general informational and commercial purposes only. While we make every effort to ensure that product descriptions, pricing, availability, and other content are accurate and up to date, we do not warrant that all information is complete, error-free, or current. <a href="https://bexorad.com/">Bexorad.com</a> may contain affiliate links, advertisements, or sponsored content, for which we may receive compensation. Bexorad is an independent retailer of fan-style sports apparel and is not affiliated with, endorsed by, or officially licensed by any professional sports league, team, player, or brand. Any third-party names referenced for descriptive purposes (such as sport or style) remain the property of their respective owners. By using <a href="https://bexorad.com/">Bexorad.com</a>, you acknowledge that you do so at your own risk, and <a href="https://bexorad.com/">Bexorad.com</a>, its owners, and contributors shall not be liable for any loss or damage arising from the use of this website, its products, services, or content.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="site-footer">
+
+        <div class="container">
+            <div class="footer-newsletter">
+                <div class="footer-newsletter-left">
+                    <div class="newsletter-icon">
+                        ✉
+                    </div>
+
+                    <div>
+                        <h2>Stay in the Game</h2>
+                        <p class="main-desc">
+                            Subscribe to receive exclusive offers, early access to new collections,
+                            limited-time discounts, and the latest sports apparel updates delivered
+                            straight to your inbox.
+                        </p>
+                    </div>
+                </div>
+
+                <form class="newsletter-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <input type="hidden" name="_subject" value="New newsletter signup - Bexorad">
+                    <input type="email" name="email" required placeholder="Enter your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="footer-main">
+
+                <div class="footer-about">
+                    <a href="#" class="footer-logo">BEXORAD</a>
+
+                    <p class="main-desc">
+                        Bexroad is your destination for premium sports jerseys and fan apparel inspired
+                        by America's most popular teams and athletes. We're committed to delivering
+                        quality products, secure shopping, and exceptional customer service.
+                    </p>
+
+
+                </div>
+
+                   <div class="footer-links">
+                    <h4>Quick Links</h4>
+
+                    <ul>
+                        <li><a href="./">Home</a></li>
+                        <li><a href="shop">Shop</a></li>
+                        <li><a href="brands">Brands</a></li>
+                        <li><a href="new-arrivals">New Arrivals</a></li>
+                        <li><a href="blog">Blog</a></li>
+                        <li><a href="about-us">About Us</a></li>
+                        <li><a href="contact-us">Contact Us</a></li>
+                    </ul>
+                </div>
+
+
+
+                <div class="footer-links">
+                    <h4>Policies</h4>
+
+                    <ul>
+                        <li><a href="privacy-policy">Privacy Policy</a></li>
+                        <li><a href="terms-conditions">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+
+                    <ul>
+                        <li>
+                            997 Seymour St, Suite 250
+                            <br>Vancouver, BC V6B 3M1
+                        <li><a href="tel:+16044492033"><strong>Phone:</strong>+1 (604) 449-2033</a> </li>
+                        <li><a href="mailto:support@bexorad.com"><strong>Email:</strong> support@bexorad.com</a> </li>
+                        <li><strong>Hours:</strong> Mon – Fri | 9:00 AM – 6:00 PM</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Bexorad. All Rights Reserved.</p>
+
+
+            </div>
+
+    </section>
+
+
+
+
+
+    <div id="cookieConsentBanner" class="cookie-consent-banner" role="dialog" aria-live="polite" aria-label="Cookie consent">
+        <p>We use cookies to improve your experience and, with your consent, for analytics and advertising. See our
+            <a href="privacy-policy">Privacy Policy</a> for details.</p>
+        <div class="cookie-consent-actions">
+            <button id="cookieConsentReject" type="button">Reject Non-Essential</button>
+            <button id="cookieConsentAccept" type="button">Accept All</button>
+        </div>
+    </div>
+</body>
+<script src="assets/js/filter.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/cookie-consent.js"></script>
+</html>
