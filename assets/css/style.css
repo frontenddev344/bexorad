@@ -217,19 +217,14 @@ p.main-desc {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 82px;
+    /* height: 82px; */
 
 }
 
 /* Logo */
 
-.logo {
-
-    color: var(--white);
-    font-size: 42px;
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 3px;
-
+.logo img {
+    max-width: 100px;
 }
 
 /* Nav */
