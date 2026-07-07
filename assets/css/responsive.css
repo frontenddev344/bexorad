@@ -1,6 +1,7 @@
 @media(max-width:1200px){
-     .product-section .arrival-products{
-        grid-template-columns:repeat(3,1fr);
+   .product-section .arrival-products {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
     }
     .brand-choose-wrapper{grid-template-columns:1fr;}
 .brand-choose-grid{grid-template-columns:repeat(2,1fr);}
@@ -87,13 +88,12 @@
         flex-direction:column;
     }
 
-    .product-section .sidebar{
-        width:100%;
-    }
+    .product-section .sidebar {
+        width: 100%;
+        position: unset;
+    }   
 
-    .product-section .arrival-products{
-        grid-template-columns:repeat(2,1fr);
-    }
+
 .brand-about-wrapper{
     grid-template-columns:1fr;
 }
