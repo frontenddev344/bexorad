@@ -1882,7 +1882,7 @@ Image
     transition:.35s;
 }
 
-.brand-about-feature h4{
+.brand-about-feature h3{
     font-size:17px;
     font-weight:700;
    color:var(--dark);
@@ -2255,17 +2255,26 @@ section.brand-about .section-heading {
     margin-bottom: 14px;
 }
 
-.policy-content h3 {
+/* Main Section Heading */
+.policy-content h2 {
     color: var(--dark);
     font-size: 24px;
-    margin: 28px 0 16px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 32px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e9ecef;
 }
 
-.policy-content h4 {
+/* Sub Section Heading */
+.policy-content h3 {
     color: var(--bluedark);
     font-size: 18px;
-    margin: 18px 0 10px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 22px 0 10px;
 }
+
 
 .policy-content ul {
     padding-left: 20px;

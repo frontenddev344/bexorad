@@ -210,6 +210,9 @@ h1.mainhead {
 }
 
 @media(max-width:767px){
+    .policy-content  , .disclaimer-content{
+    padding: 40px 20px;
+}
     .brand-choose-grid{grid-template-columns:1fr;}
 .brand-choose-bottom{grid-template-columns:repeat(2,1fr);gap:25px;}
 .brand-showcase-image img{height:280px;}
@@ -232,7 +235,7 @@ h1.mainhead {
     font-size:20px;
 }
 
-.brand-about-feature h4{
+.brand-about-feature h3{
     font-size:14px;
 }
 
