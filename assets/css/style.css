@@ -763,11 +763,8 @@ FEATURED COLLECTION
 
 
 .offer-content h2 {
-    font-size: 52px;
-    line-height: 1.1;
-    margin-top: 20px;
     margin-bottom: 20px;
-    font-weight: 800;
+    color: var(--light);
 }
 
 .offer-content h2 span {
