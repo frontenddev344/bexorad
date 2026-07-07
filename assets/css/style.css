@@ -17,7 +17,7 @@ html {
 :root {
     --bluedark: #0B1F3A;
     /* Navy */
-    --pink: #e63946;
+    --pink: #ba3133;
     /* Sports Red */
     --yellow: #F4B400;
     /* Gold */
@@ -218,7 +218,7 @@ p.main-desc {
     justify-content: space-between;
     align-items: center;
     /* height: 82px; */
-
+        padding: 10px 15px;
 }
 
 /* Logo */
