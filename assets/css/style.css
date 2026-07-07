@@ -239,13 +239,15 @@ p.main-desc {
 .nav-links a {
 
     color: var(--white);
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
     position: relative;
     transition: .3s;
 
 }
-
+a.activemenu {
+    color: var(--pink);
+}
 .nav-links a::after {
 
     content: "";
