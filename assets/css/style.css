@@ -514,7 +514,7 @@ span.hero-tag {
     transform: rotateY(180deg);
 }
 
-.trust-card h3 {
+.trust-card h2 , .trust-card h3{
     font-size: 22px;
     color: var(--dark);
     margin-bottom: 15px;
