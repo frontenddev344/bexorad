@@ -263,8 +263,8 @@ h1.mainhead {
     }
 
     .brandmain-premium-item{
-        width:100%;
-        padding:18px 0;
+              width: 100%;
+        padding: 18px 0 0;
     }
 
     .brandmain-premium-item::after{
@@ -366,6 +366,9 @@ h1.mainhead {
 }
 }
 @media(max-width:575px){
+    .section-heading {
+    margin: 0 auto 35px;
+}
         .latest-blog .blog-grid , .brandmainflex.brandsec {
     grid-template-columns:  1fr;
 }
