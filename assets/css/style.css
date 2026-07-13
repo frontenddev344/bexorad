@@ -637,6 +637,27 @@ FEATURED COLLECTION
     color:#27d07d;
     font-weight:600;
 }
+.newsletter-form{
+    position: relative;
+}
+
+.newsletter-form-wrapper{
+    display:flex;
+    flex-direction:column;
+    min-width:430px;
+}
+
+.form-note{
+    margin-top:12px;
+    min-height:22px;
+    color:#27d07d;
+    opacity:0;
+    transition:.3s ease;
+}
+
+.form-note.show{
+    opacity:1;
+}
 .feature-card {
     background: var(--white);
     border-radius: 16px;

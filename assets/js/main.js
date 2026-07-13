@@ -209,3 +209,64 @@ function initBexoradContactForm() {
 document.addEventListener("DOMContentLoaded", initBexoradContactForm);
 
 // Form Validations End
+
+// Newsletter Validation JS Start
+function initNewsletterForm() {
+
+    const form = document.querySelector("#newsletter-form");
+
+    if (!form) return;
+
+    const input = form.querySelector("input[type='email']");
+    const note = document.querySelector("#newsletter-note");
+
+    form.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        // Reset previous validation
+        input.setCustomValidity("");
+
+        note.textContent = "";
+        note.classList.remove("show");
+        note.style.color = "";
+
+        // Empty validation
+        if (!input.value.trim()) {
+            input.setCustomValidity("Please enter your email address.");
+        }
+
+        if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+        }
+
+        // Email validation
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value.trim())) {
+            input.setCustomValidity("Please enter a valid email address.");
+        }
+
+        if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+        }
+
+        // ===== SUCCESS =====
+
+        note.textContent = "✅ You're subscribed! Thank you for joining our newsletter.";
+        note.style.color = "#27d07d";
+        note.classList.add("show");
+
+        form.reset();
+
+        setTimeout(() => {
+            note.textContent = "";
+            note.classList.remove("show");
+        }, 3000);
+
+    });
+
+}
+document.addEventListener("DOMContentLoaded", initNewsletterForm);
+
+// Newsletter Validation JS End

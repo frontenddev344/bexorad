@@ -253,12 +253,11 @@
         </div>
     </section>
 
-    <section class="site-footer">
+    <footer class="site-footer">
         <div class="container">
             <div class="footer-newsletter">
                 <div class="footer-newsletter-left">
                     <div class="newsletter-icon">✉</div>
-
                     <div>
                         <h2>Stay in the Game</h2>
                         <p class="main-desc">
@@ -268,12 +267,16 @@
                         </p>
                     </div>
                 </div>
-
-                <form class="newsletter-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                    <input type="hidden" name="_subject" value="New newsletter signup - Bexorad">
-                    <input type="email" name="email" required="" placeholder="Enter your email address">
-                    <button type="submit">Subscribe</button>
-                </form>
+                <div class="newsletter-form-wrapper">
+                    <form class="newsletter-form" id="newsletter-form" novalidate>
+                        <input type="hidden" name="_subject" value="New newsletter signup - Bexorad">
+                        <input type="email" name="email" placeholder="Enter your email address" required>
+                        <button type="submit">
+                            Subscribe
+                        </button>
+                    </form>
+                    <p class="form-note" id="newsletter-note"></p>
+                </div>
             </div>
 
             <div class="footer-main">
@@ -342,7 +345,7 @@
                 <p>© 2026 Bexorad. All Rights Reserved.</p>
             </div>
         </div>
-    </section>
+    </footer>
 
 
 
