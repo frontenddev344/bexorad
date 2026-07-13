@@ -624,7 +624,19 @@ FEATURED COLLECTION
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
+.field-error{
+    display:block;
+    margin-top:6px;
+    color:#ff5252;
+    font-size:14px;
+}
 
+.form-success{
+    display:none;
+    margin-top:20px;
+    color:#27d07d;
+    font-weight:600;
+}
 .feature-card {
     background: var(--white);
     border-radius: 16px;

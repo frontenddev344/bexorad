@@ -88,3 +88,124 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 //Tabs//
+
+// Form Validations Start
+function initBexoradContactForm() {
+
+    const form = document.querySelector("#bexoradContactForm");
+
+    if (!form) return;
+
+    const successBox = form.querySelector(".form-success");
+
+    const requiredFields = form.querySelectorAll("[required]");
+
+    function clearErrors() {
+
+        form.querySelectorAll(".field-error").forEach(error => {
+            error.textContent = "";
+        });
+
+        requiredFields.forEach(field => {
+            field.setCustomValidity("");
+        });
+
+    }
+
+    function showError(field, message) {
+
+        const error = field.parentElement.querySelector(".field-error");
+
+        if (error) {
+            error.textContent = message;
+        }
+
+        field.setCustomValidity(message);
+
+    }
+
+    form.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        clearErrors();
+
+        let valid = true;
+
+        // Full Name
+        const fullName = form.querySelector("#contactFullName");
+
+        if (!fullName.value.trim()) {
+
+            showError(fullName, "Please enter your full name.");
+
+            valid = false;
+
+        }
+
+        // Email
+        const email = form.querySelector("#contactEmail");
+
+        if (!email.value.trim()) {
+
+            showError(email, "Please enter your email address.");
+
+            valid = false;
+
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
+
+            showError(email, "Please enter a valid email address.");
+
+            valid = false;
+
+        }
+
+        // Subject
+        const subject = form.querySelector("#contactSubject");
+
+        if (!subject.value.trim()) {
+
+            showError(subject, "Please select a subject.");
+
+            valid = false;
+
+        }
+
+        // Message
+        const message = form.querySelector("#contactMessage");
+
+        if (!message.value.trim()) {
+
+            showError(message, "Please enter your message.");
+
+            valid = false;
+
+        }
+
+        if (!valid) {
+
+            form.reportValidity();
+
+            return;
+
+        }
+
+        // ===== SUCCESS =====
+
+        successBox.style.display = "block";
+
+        form.reset();
+
+        setTimeout(() => {
+
+            successBox.style.display = "none";
+
+        }, 3000);
+
+    });
+
+}
+
+document.addEventListener("DOMContentLoaded", initBexoradContactForm);
+
+// Form Validations End
