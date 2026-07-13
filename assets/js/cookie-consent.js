@@ -45,11 +45,7 @@ function showCookieBanner() {
   var banner = document.getElementById("cookieConsentBanner");
   if (!banner) return;
 
-  banner.style.display = "flex";
-
-  requestAnimationFrame(function () {
-    banner.classList.add("is-visible");
-  });
+showCookieBanner();
 }
 
 // Make it accessible from anywhere
@@ -91,35 +87,26 @@ window.showCookieBanner = showCookieBanner;
     }
   }
 
-if (document.readyState === "loading") {
-
-  document.addEventListener("DOMContentLoaded", function () {
-
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
     init();
+  }
+})();
+document.addEventListener("DOMContentLoaded", function () {
 
     var privacyLink = document.getElementById("privacy-choices-link");
 
-    if (privacyLink) {
-      privacyLink.addEventListener("click", function (e) {
-        e.preventDefault();
-        showCookieBanner();
-      });
-    }
+    if (!privacyLink) return;
 
-  });
-
-} else {
-
-  init();
-
-  var privacyLink = document.getElementById("privacy-choices-link");
-
-  if (privacyLink) {
     privacyLink.addEventListener("click", function (e) {
-      e.preventDefault();
-      showCookieBanner();
-    });
-  }
 
-}
-})();
+        e.preventDefault();
+
+        if (typeof window.showCookieBanner === "function") {
+            window.showCookieBanner();
+        }
+
+    });
+
+});
