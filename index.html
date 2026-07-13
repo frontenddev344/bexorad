@@ -249,8 +249,6 @@
           <div class="feature-content">
             <h3 class="player-name">Elite Home Jersey</h3>
             <span class="team-name">Football Collection</span>
-
-            <div class="feature-rating">★★★★★</div>
           </div>
         </div>
 
@@ -262,8 +260,6 @@
           <div class="feature-content">
             <h3 class="player-name">Icon Series Jersey</h3>
             <span class="team-name">Basketball Collection</span>
-
-            <div class="feature-rating">★★★★★</div>
           </div>
         </div>
 
@@ -275,8 +271,6 @@
           <div class="feature-content">
             <h3 class="player-name">Classic Home Jersey</h3>
             <span class="team-name">Baseball Collection</span>
-
-            <div class="feature-rating">★★★★★</div>
           </div>
         </div>
 
@@ -288,8 +282,6 @@
           <div class="feature-content">
             <h3 class="player-name">Pro Style Jersey</h3>
             <span class="team-name">Hockey Collection</span>
-
-            <div class="feature-rating">★★★★★</div>
           </div>
         </div>
       </div>
@@ -491,21 +483,25 @@
       <div class="footer-newsletter">
         <div class="footer-newsletter-left">
           <div class="newsletter-icon">✉</div>
-
           <div>
             <h2>Stay in the Game</h2>
             <p class="main-desc">
-              Subscribe to receive exclusive offers, early access to new collections, limited-time discounts, and the
+              Subscribe to receive exclusive offers, early access to new collections, limited-time
+              discounts, and the
               latest sports apparel updates delivered straight to your inbox.
             </p>
           </div>
         </div>
-
-        <form class="newsletter-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-          <input type="hidden" name="_subject" value="New newsletter signup - Bexorad">
-          <input type="email" name="email" required="" placeholder="Enter your email address">
-          <button type="submit">Subscribe</button>
-        </form>
+        <div class="newsletter-form-wrapper">
+          <form class="newsletter-form" id="newsletter-form" novalidate>
+            <input type="hidden" name="_subject" value="New newsletter signup - Bexorad">
+            <input type="email" name="email" placeholder="Enter your email address" required>
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+          <p class="form-note" id="newsletter-note"></p>
+        </div>
       </div>
 
       <div class="footer-main">
@@ -515,8 +511,10 @@
           </a>
 
           <p class="main-desc">
-            Bexroad is your destination for premium sports jerseys and fan apparel inspired by America's most popular
-            teams and athletes. We're committed to delivering quality products, secure shopping, and exceptional
+            bexorad is your destination for premium sports jerseys and fan apparel inspired by America's
+            most popular
+            teams and athletes. We're committed to delivering quality products, secure shopping, and
+            exceptional
             customer service.
           </p>
         </div>
@@ -550,9 +548,10 @@
 
           <ul>
             <li>
-              997 Seymour St, Suite 250
-              <br>
-              Vancouver, BC V6B 3M1
+              <a href="https://maps.app.goo.gl/9qL9T86nAUKYXfQC7">997 Seymour St, Suite 250
+                <br>
+                Vancouver, BC V6B 3M1
+              </a>
             </li>
             <li>
               <a href="tel:+16044492033">
