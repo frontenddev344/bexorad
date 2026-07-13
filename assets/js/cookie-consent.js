@@ -41,6 +41,20 @@
     }, 250);
   }
 
+function showCookieBanner() {
+  var banner = document.getElementById("cookieConsentBanner");
+  if (!banner) return;
+
+  banner.style.display = "flex";
+
+  requestAnimationFrame(function () {
+    banner.classList.add("is-visible");
+  });
+}
+
+// Make it accessible from anywhere
+window.showCookieBanner = showCookieBanner;
+
   function init() {
     var banner = document.getElementById("cookieConsentBanner");
     if (!banner) return;
@@ -56,10 +70,7 @@
     }
 
     // No stored choice yet — show the banner.
-    banner.style.display = "flex";
-    requestAnimationFrame(function () {
-      banner.classList.add("is-visible");
-    });
+    showCookieBanner();
 
     var acceptBtn = document.getElementById("cookieConsentAccept");
     var rejectBtn = document.getElementById("cookieConsentReject");
@@ -80,9 +91,35 @@
     }
   }
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
+if (document.readyState === "loading") {
+
+  document.addEventListener("DOMContentLoaded", function () {
+
     init();
+
+    var privacyLink = document.getElementById("privacy-choices-link");
+
+    if (privacyLink) {
+      privacyLink.addEventListener("click", function (e) {
+        e.preventDefault();
+        showCookieBanner();
+      });
+    }
+
+  });
+
+} else {
+
+  init();
+
+  var privacyLink = document.getElementById("privacy-choices-link");
+
+  if (privacyLink) {
+    privacyLink.addEventListener("click", function (e) {
+      e.preventDefault();
+      showCookieBanner();
+    });
   }
+
+}
 })();
