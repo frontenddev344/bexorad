@@ -453,6 +453,7 @@ span.hero-tag {
     border: 2px solid var(--pink);
     box-shadow: 0 8px 20px rgba(230, 57, 70, 0.3);
     cursor: pointer;
+    display: inline-block;
 }
 
 .btn-primary:hover {
@@ -2218,6 +2219,9 @@ section.brand-about .section-heading {
 /* CONTENT */
 .product-section .arrival-card .arrival-content{
     padding:18px;
+}
+.btn-primary.buy_btn {
+    padding: 0.5rem 1.5rem;
 }
 
 .product-section .arrival-content h3{
