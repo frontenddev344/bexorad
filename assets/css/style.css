@@ -359,15 +359,20 @@ a.activemenu {
     transition: .3s;
 }
 
+
 /*Banner-css-Start*/
 .hero {
     position: relative;
-    height: 650px;
+    /* height: 650px; */
+    height: calc(100vh - 150px);
     display: flex;
     align-items: center;
     background: url("../images/homebnr.png") center/cover no-repeat;
     overflow: hidden;
     animation: fadeInDown 0.8s ease-out;
+}
+.hero.sub_banner {
+    height: 550px !important;
 }
 .aboutbnr {
     background: url("../images/aboutbnr.jpg") center/cover no-repeat;
