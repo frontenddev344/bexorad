@@ -244,13 +244,15 @@
 
 @media(max-width:767px) {
 
-    .policy-content,
-    .disclaimer-content {
+    .policy-content {
         padding: 40px 0px;
     }
 
-    .disclaimer-section {
+    .disclaimer-content {
+        padding: 0;
+    }
 
+    .disclaimer-section {
         padding: 40px 0;
     }
 
