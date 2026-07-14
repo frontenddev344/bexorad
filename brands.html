@@ -4,12 +4,10 @@
 <head>
 
     <meta charset="UTF-8">
-
-
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/css/swiper.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
@@ -111,7 +109,7 @@
                 </p>
 
                 <div class="hero-btns">
-                    <a href="brands" class="btn-primary">
+                    <a href="#next_sec" class="btn-primary">
                         Explore Brands
                     </a>
                 </div>
@@ -122,8 +120,81 @@
 
     </section>
 
+    <section class="brand-main spacingmain">
+        <div class="container">
 
-    <section class="season-main samesec spacingmain">
+            <div class="section-heading">
+                <span class="hero-tag">Shop by Brand</span>
+
+                <h2 class="maintitle">
+                    Explore Premium Sports Brands
+                </h2>
+
+                <p class="main-desc">
+                    Explore premium sports apparel inspired by the world's most recognized athletic brands.
+                </p>
+            </div>
+
+            <div class="swiper brandSwiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <a href="https://www.nike.com/" class="brand-card">
+                            <img src="assets/images/nike_logo.svg" alt="Nike">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://www.adidas.com/" class="brand-card">
+                            <img src="assets/images/adidas_logo.png" alt="Adidas">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://us.puma.com/" class="brand-card">
+                            <img src="assets/images/puma_logo.png" alt="Puma">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://www.underarmour.com/" class="brand-card">
+                            <img src="assets/images/under_armor_logo.svg" alt="Under Armour">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://www.newbalance.com/" class="brand-card">
+                            <img src="assets/images/new_balance_logo.png" alt="New Balance">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://www.asics.com/" class="brand-card">
+                            <img src="assets/images/asics_logo.png" alt="ASICS">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://www.reebok.com/" class="brand-card">
+                            <img src="assets/images/reebok_logo.png" alt="Reebok">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="shop?brand=jordan" class="brand-card">
+                            <img src="assets/images/jordan-air.svg" alt="Jordan">
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="season-main samesec spacingmain" id="next_sec">
         <div class="container">
 
             <div class="section-heading">
@@ -216,6 +287,8 @@
 
         </div>
     </section>
+
+
 
     <section class="feature-section spacingmain">
 
@@ -593,6 +666,52 @@
         </div>
     </div>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script>
+        const brandSwiper = new Swiper(".brandSwiper", {
+            loop: true,
+            speed: 5000, // Higher = slower, smoother movement
+
+            slidesPerView: "auto",
+            spaceBetween: 25,
+
+            allowTouchMove: true,
+
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+
+            freeMode: {
+                enabled: true,
+                momentum: false,
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                576: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 25,
+                },
+                992: {
+                    slidesPerView: 5,
+                    spaceBetween: 25,
+                },
+                1200: {
+                    slidesPerView: 6,
+                    spaceBetween: 25,
+                },
+            },
+        }); 
+    </script>
     <script src="assets/js/filter.js"></script>
     <script src="assets/js/cookie-consent.js"></script>
 </body>

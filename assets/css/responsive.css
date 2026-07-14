@@ -360,7 +360,6 @@ h1.mainhead {
 }
 
 .newsletter-form input, .newsletter-form button {
-    width: 100%;
     border-radius: 6px;
     padding: 12px;
 }
