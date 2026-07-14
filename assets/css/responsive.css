@@ -253,7 +253,7 @@
     }
 
     .disclaimer-section {
-        padding: 40px 20px;
+        padding: 40px 20px !important;
     }
 
     .brand-choose-grid {
