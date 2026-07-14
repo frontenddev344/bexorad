@@ -374,6 +374,9 @@ a.activemenu {
 .hero.sub_banner {
     height: 550px !important;
 }
+.hero.sub_banner.v1 {
+    height: 400px !important;
+}
 .aboutbnr {
     background: url("../images/aboutbnr.jpg") center/cover no-repeat;
 }
@@ -1101,12 +1104,13 @@ section.latest-blog .container {
 /* ===== DISCLAIMER SECTION ===== */
 .disclaimer-section {
     animation: fadeInUp 0.8s ease-out;
+    border-top: 1px solid var(--dark);
+    padding:40px 30px;
 }
 
 .disclaimer-content {
     background: var(--white);
     border-radius: 12px;
-    padding: 40px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     animation: scaleIn 0.8s ease-out;
 }

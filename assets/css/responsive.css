@@ -153,7 +153,7 @@
       .category-grid{
         grid-template-columns:repeat(2,1fr);
     }
-	.trust-grid{
+	.trust-grid, .contact-trust .trust-grid{
     grid-template-columns:repeat(2,1fr);
 }
 	.hero-content p {
@@ -356,7 +356,7 @@ h1.mainhead {
 .newsletter-form{
         flex-direction: column;
         gap: 12px;
-        min-width: 100%;;
+        min-width: 320px;
 }
 
 .newsletter-form input, .newsletter-form button {
@@ -411,7 +411,7 @@ h1.mainhead {
         gap:15px;
     }
 
-	.trust-grid{
+	.trust-grid ,.contact-trust .trust-grid{
     grid-template-columns:1fr;
 }
 	.btn-primary,
