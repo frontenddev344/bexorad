@@ -315,6 +315,9 @@ h1.mainhead {
     padding:30px;
 }
 
+.faq-box{
+    padding:0;
+}
 .form-row{
     grid-template-columns:1fr;
 }
