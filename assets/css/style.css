@@ -1208,7 +1208,6 @@ section.latest-blog .container {
 /* ===== DISCLAIMER SECTION ===== */
 .disclaimer-section {
     animation: fadeInUp 0.8s ease-out;
-    border-top: 1px solid var(--dark);
     padding: 40px 30px;
 }
 
